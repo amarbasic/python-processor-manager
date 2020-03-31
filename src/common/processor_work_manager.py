@@ -1,3 +1,5 @@
+import abc
+
 class ProcessorWorkManager(abc.ABC):
     """Work manager abstract class"""
     @abc.abstractmethod

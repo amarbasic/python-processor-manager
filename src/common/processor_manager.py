@@ -1,4 +1,8 @@
+import logging
+from multiprocessing import Process
+
 from .processor_worker import ProcessorWorker
+from .processor_work_manager import ProcessorWorkManager
 
 class ProcessorManager:
     """Processor manager"""

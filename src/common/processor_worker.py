@@ -1,3 +1,7 @@
+import logging
+import traceback
+import sys
+
 from .processor_work_manager import ProcessorWorkManager
 
 class ProcessorWorker:
@@ -12,7 +16,7 @@ class ProcessorWorker:
         while self._running:
             try:
                 self.process()
-            except Exception:
+            except Exception as ex:
                 logging.error(traceback.format_exception(*sys.exc_info()))
                 continue
 
