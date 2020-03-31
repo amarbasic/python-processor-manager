@@ -1,2 +1,2 @@
-# python-processor-setup
-Python processor setup
+# Python processor manager
+Python processor manager setup
